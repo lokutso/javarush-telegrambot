@@ -1,13 +1,27 @@
 # JavaRush Telegram Bot
 
 ## Overview
-Repository creates for fast running development process with configuration, which are the same from project to project.
+JavaRush Telegram bot for community.
 
-## Building
-...
+## MVP Scope
+As a user, I want to subscribe on group of articles and get notification via telegram-bot every time, 
+when new article, related to group subscriptions, has come.
 
-## Troubleshooting
-...
+# How it would work 
+Based on MVP Scope, we can specify next behaviours (here and after Telegram User, which is using JavaRush Telgegram bot will call User):
+- User can subscribe on group of articles
+- User can view list of gorup subscriptions on which user subscribes
+- User can unsubscribe from gorup of articles
+- User can set an inactive bot and do not receive notifications
+- User can restart gettting notifications
+
+# Technological stack
+- SpringBoot as a skeleton framework
+- Spring Scheduler as a task manager
+- MySQL database as a database for saving user and subscription info
+- Flyway database migration tool
+- Telegram-bot starter
+- Spring Data starter
 
 ## Release Notes
 Can be found in [RELEASE_NOTES](RELEASE_NOTES.md).
